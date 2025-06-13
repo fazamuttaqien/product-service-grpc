@@ -10,7 +10,7 @@
         "dependencies": {
           "Grpc.AspNetCore": "2.57.0",
           "Grpc.AspNetCore.HealthChecks": "2.57.0",
-          "Grpc.Tools": "2.57.0",
+          "ProductService.Contracts": "1.0.0",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Sinks.Console": "4.1.0",
           "Serilog.Sinks.File": "5.0.0"
@@ -19,17 +19,17 @@
           "ProductService.Server.dll": {}
         }
       },
-      "Google.Protobuf/3.23.1": {
+      "Google.Protobuf/3.25.0": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
-            "assemblyVersion": "3.23.1.0",
-            "fileVersion": "3.23.1.0"
+            "assemblyVersion": "3.25.0.0",
+            "fileVersion": "3.25.0.0"
           }
         }
       },
       "Grpc.AspNetCore/2.57.0": {
         "dependencies": {
-          "Google.Protobuf": "3.23.1",
+          "Google.Protobuf": "3.25.0",
           "Grpc.AspNetCore.Server.ClientFactory": "2.57.0",
           "Grpc.Tools": "2.57.0"
         }
@@ -79,7 +79,7 @@
       },
       "Grpc.HealthCheck/2.57.0": {
         "dependencies": {
-          "Google.Protobuf": "3.23.1",
+          "Google.Protobuf": "3.25.0",
           "Grpc.Core.Api": "2.57.0",
           "System.Threading.Channels": "4.6.0"
         },
@@ -307,7 +307,19 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
-      "System.Threading.Channels/4.6.0": {}
+      "System.Threading.Channels/4.6.0": {},
+      "ProductService.Contracts/1.0.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.25.0",
+          "Grpc.Net.Client": "2.57.0"
+        },
+        "runtime": {
+          "ProductService.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -316,12 +328,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Google.Protobuf/3.23.1": {
+    "Google.Protobuf/3.25.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ebVTazjarSS1MsKjFxq4a3Kudm3dq2KjM9jcxgn2NdeRaCl1tvarqgqQRITs99kg8M+B7SvwuD8yqcwE+PoN4g==",
-      "path": "google.protobuf/3.23.1",
-      "hashPath": "google.protobuf.3.23.1.nupkg.sha512"
+      "sha512": "sha512-pIEkH1IqZV1iK8J5MYdG1kOyY0EoQLB6yEKvBq12RYNtvGXwCvnQg5zQsFmcqAEPtIZvSqPozIbUZaEd5a2gCg==",
+      "path": "google.protobuf/3.25.0",
+      "hashPath": "google.protobuf.3.25.0.nupkg.sha512"
     },
     "Grpc.AspNetCore/2.57.0": {
       "type": "package",
@@ -560,6 +572,11 @@
       "sha512": "sha512-xdCw/eEo1XwxQNuhTLD10gaXnVt5rkKZCPjttXE5vtqwEkheqdGrNBcbU0UP9zWdgIwZWD+4NEl4OS10jKrZtg==",
       "path": "system.threading.channels/4.6.0",
       "hashPath": "system.threading.channels.4.6.0.nupkg.sha512"
+    },
+    "ProductService.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

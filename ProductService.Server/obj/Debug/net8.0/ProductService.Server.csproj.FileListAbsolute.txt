@@ -45,3 +45,6 @@ C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Server\
 C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Server\obj\Debug\net8.0\ProductService.Server.pdb
 C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Server\obj\Debug\net8.0\ProductService.Server.genruntimeconfig.cache
 C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Server\obj\Debug\net8.0\ref\ProductService.Server.dll
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Server\bin\Debug\net8.0\ProductService.Contracts.dll
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Server\bin\Debug\net8.0\ProductService.Contracts.pdb
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Server\obj\Debug\net8.0\ProductService.Server.sourcelink.json

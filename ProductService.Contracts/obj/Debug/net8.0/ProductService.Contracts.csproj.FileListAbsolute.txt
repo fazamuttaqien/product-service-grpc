@@ -1,0 +1,13 @@
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\bin\Debug\net8.0\ProductService.Contracts.deps.json
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\bin\Debug\net8.0\ProductService.Contracts.dll
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\bin\Debug\net8.0\ProductService.Contracts.pdb
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.csproj.AssemblyReference.cache
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.AssemblyInfoInputs.cache
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.AssemblyInfo.cs
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.sourcelink.json
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.dll
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\refint\ProductService.Contracts.dll
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ProductService.Contracts.pdb
+C:\Users\fazamuttaqien\Documents\.NET\gRPC\ProductService\ProductService.Contracts\obj\Debug\net8.0\ref\ProductService.Contracts.dll
