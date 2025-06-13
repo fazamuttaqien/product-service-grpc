@@ -15,79 +15,6 @@
           }
         }
       },
-      "Grpc.AspNetCore/2.57.0": {
-        "type": "package",
-        "dependencies": {
-          "Google.Protobuf": "3.23.1",
-          "Grpc.AspNetCore.Server.ClientFactory": "2.57.0",
-          "Grpc.Tools": "2.57.0"
-        },
-        "compile": {
-          "lib/net8.0/_._": {}
-        },
-        "runtime": {
-          "lib/net8.0/_._": {}
-        }
-      },
-      "Grpc.AspNetCore.HealthChecks/2.57.0": {
-        "type": "package",
-        "dependencies": {
-          "Grpc.AspNetCore.Server": "2.57.0",
-          "Grpc.HealthCheck": "2.57.0"
-        },
-        "compile": {
-          "lib/net8.0/Grpc.AspNetCore.HealthChecks.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.AspNetCore.HealthChecks.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Grpc.AspNetCore.Server/2.57.0": {
-        "type": "package",
-        "dependencies": {
-          "Grpc.Net.Common": "2.57.0"
-        },
-        "compile": {
-          "lib/net8.0/Grpc.AspNetCore.Server.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.AspNetCore.Server.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Grpc.AspNetCore.Server.ClientFactory/2.57.0": {
-        "type": "package",
-        "dependencies": {
-          "Grpc.AspNetCore.Server": "2.57.0",
-          "Grpc.Net.ClientFactory": "2.57.0"
-        },
-        "compile": {
-          "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Grpc.Core.Api/2.57.0": {
         "type": "package",
         "compile": {
@@ -97,24 +24,6 @@
         },
         "runtime": {
           "lib/netstandard2.1/Grpc.Core.Api.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Grpc.HealthCheck/2.57.0": {
-        "type": "package",
-        "dependencies": {
-          "Google.Protobuf": "3.23.1",
-          "Grpc.Core.Api": "2.57.0",
-          "System.Threading.Channels": "4.6.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Grpc.HealthCheck.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Grpc.HealthCheck.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -132,23 +41,6 @@
         },
         "runtime": {
           "lib/net8.0/Grpc.Net.Client.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Grpc.Net.ClientFactory/2.57.0": {
-        "type": "package",
-        "dependencies": {
-          "Grpc.Net.Client": "2.57.0",
-          "Microsoft.Extensions.Http": "6.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Grpc.Net.ClientFactory.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.Net.ClientFactory.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -371,26 +263,6 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyModel/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0",
-          "System.Text.Json": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.Extensions.DependencyModel.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
@@ -813,33 +685,6 @@
           }
         }
       },
-      "Serilog.AspNetCore/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.Extensions.Logging": "7.0.0",
-          "Serilog": "2.12.0",
-          "Serilog.Extensions.Hosting": "7.0.0",
-          "Serilog.Formatting.Compact": "1.1.0",
-          "Serilog.Settings.Configuration": "7.0.0",
-          "Serilog.Sinks.Console": "4.0.1",
-          "Serilog.Sinks.Debug": "2.0.0",
-          "Serilog.Sinks.File": "5.0.0"
-        },
-        "compile": {
-          "lib/net7.0/Serilog.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Serilog.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Serilog.Extensions.Hosting/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -877,40 +722,6 @@
           }
         }
       },
-      "Serilog.Formatting.Compact/1.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "2.8.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Serilog.Settings.Configuration/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Binder": "7.0.0",
-          "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "Serilog": "2.12.0"
-        },
-        "compile": {
-          "lib/net7.0/Serilog.Settings.Configuration.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Serilog.Settings.Configuration.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Serilog.Sinks.Console/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -923,22 +734,6 @@
         },
         "runtime": {
           "lib/net5.0/Serilog.Sinks.Console.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Serilog.Sinks.Debug/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "2.10.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/Serilog.Sinks.Debug.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/Serilog.Sinks.Debug.dll": {
             "related": ".xml"
           }
         }
@@ -1042,38 +837,19 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "System.Threading.Channels/4.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "ProductService.Server/1.0.0": {
+      "ProductService.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Grpc.AspNetCore": "2.57.0",
-          "Grpc.AspNetCore.HealthChecks": "2.57.0",
-          "Serilog.AspNetCore": "7.0.0",
-          "Serilog.Sinks.Console": "4.1.0",
-          "Serilog.Sinks.File": "5.0.0"
+          "Google.Protobuf": "3.25.0",
+          "Grpc.Net.Client": "2.57.0"
         },
         "compile": {
-          "bin/placeholder/ProductService.Server.dll": {}
+          "bin/placeholder/ProductService.Contracts.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ProductService.Server.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+          "bin/placeholder/ProductService.Contracts.dll": {}
+        }
       }
     }
   },
@@ -1101,86 +877,6 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "Grpc.AspNetCore/2.57.0": {
-      "sha512": "mTKo9d5DYOxTFhg/8sdX5O3+gw1uFESmu7WhH04t5PSPltpQ10ZiK+Mr/ju/TW3MwxJg8uHt71fWL6AS443izw==",
-      "type": "package",
-      "path": "grpc.aspnetcore/2.57.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "grpc.aspnetcore.2.57.0.nupkg.sha512",
-        "grpc.aspnetcore.nuspec",
-        "lib/net6.0/_._",
-        "lib/net7.0/_._",
-        "lib/net8.0/_._",
-        "packageIcon.png"
-      ]
-    },
-    "Grpc.AspNetCore.HealthChecks/2.57.0": {
-      "sha512": "MTxK4LJlEcqKUPQ7VfMWwmonzxvX58khjlUs4caEllJxo7DYqV95i7EuMTWTUdVzSZ1pCtfo9lw9Un2Nm+GqQg==",
-      "type": "package",
-      "path": "grpc.aspnetcore.healthchecks/2.57.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "grpc.aspnetcore.healthchecks.2.57.0.nupkg.sha512",
-        "grpc.aspnetcore.healthchecks.nuspec",
-        "lib/net6.0/Grpc.AspNetCore.HealthChecks.dll",
-        "lib/net6.0/Grpc.AspNetCore.HealthChecks.pdb",
-        "lib/net6.0/Grpc.AspNetCore.HealthChecks.xml",
-        "lib/net7.0/Grpc.AspNetCore.HealthChecks.dll",
-        "lib/net7.0/Grpc.AspNetCore.HealthChecks.pdb",
-        "lib/net7.0/Grpc.AspNetCore.HealthChecks.xml",
-        "lib/net8.0/Grpc.AspNetCore.HealthChecks.dll",
-        "lib/net8.0/Grpc.AspNetCore.HealthChecks.pdb",
-        "lib/net8.0/Grpc.AspNetCore.HealthChecks.xml",
-        "packageIcon.png"
-      ]
-    },
-    "Grpc.AspNetCore.Server/2.57.0": {
-      "sha512": "g4JKqJ3RB7WKOrBxMSCkRc/1Xa5GqYlVb7k8OjUsERKW7LdSQ0ajcFMZ4Q79BZgA/xbJlGttmq4ewyzpBqGetA==",
-      "type": "package",
-      "path": "grpc.aspnetcore.server/2.57.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "grpc.aspnetcore.server.2.57.0.nupkg.sha512",
-        "grpc.aspnetcore.server.nuspec",
-        "lib/net6.0/Grpc.AspNetCore.Server.dll",
-        "lib/net6.0/Grpc.AspNetCore.Server.pdb",
-        "lib/net6.0/Grpc.AspNetCore.Server.xml",
-        "lib/net7.0/Grpc.AspNetCore.Server.dll",
-        "lib/net7.0/Grpc.AspNetCore.Server.pdb",
-        "lib/net7.0/Grpc.AspNetCore.Server.xml",
-        "lib/net8.0/Grpc.AspNetCore.Server.dll",
-        "lib/net8.0/Grpc.AspNetCore.Server.pdb",
-        "lib/net8.0/Grpc.AspNetCore.Server.xml",
-        "packageIcon.png"
-      ]
-    },
-    "Grpc.AspNetCore.Server.ClientFactory/2.57.0": {
-      "sha512": "Ucl50YKMMRaP/ikx20v6tDGdNaRzeiujmw8kmAFy3/4f8+d1mDY8wn3vcXpIflX4IE+WvZQOTHz5r/3/GutbQw==",
-      "type": "package",
-      "path": "grpc.aspnetcore.server.clientfactory/2.57.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "grpc.aspnetcore.server.clientfactory.2.57.0.nupkg.sha512",
-        "grpc.aspnetcore.server.clientfactory.nuspec",
-        "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.dll",
-        "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
-        "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.xml",
-        "lib/net7.0/Grpc.AspNetCore.Server.ClientFactory.dll",
-        "lib/net7.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
-        "lib/net7.0/Grpc.AspNetCore.Server.ClientFactory.xml",
-        "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll",
-        "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
-        "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.xml",
-        "packageIcon.png"
-      ]
-    },
     "Grpc.Core.Api/2.57.0": {
       "sha512": "48jpfMyYdhaPS6PGnk7sEqSO3+c/w11ahY+a33ymo0BsQEsBVIoJoS5xMsl5RzBlpKY41PnN+qJGMm3VyE5OQg==",
       "type": "package",
@@ -1203,28 +899,6 @@
         "lib/netstandard2.1/Grpc.Core.Api.dll",
         "lib/netstandard2.1/Grpc.Core.Api.pdb",
         "lib/netstandard2.1/Grpc.Core.Api.xml",
-        "packageIcon.png"
-      ]
-    },
-    "Grpc.HealthCheck/2.57.0": {
-      "sha512": "JLqHgQD0m98m2WZmXzudZWaCKUPO8WAJuHv51jIdMB/Pl2wTpqr4kD4P0PxI7Pk0iEBkEwt9+SMW7Z7s1Y8XuQ==",
-      "type": "package",
-      "path": "grpc.healthcheck/2.57.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "grpc.healthcheck.2.57.0.nupkg.sha512",
-        "grpc.healthcheck.nuspec",
-        "lib/net462/Grpc.HealthCheck.dll",
-        "lib/net462/Grpc.HealthCheck.pdb",
-        "lib/net462/Grpc.HealthCheck.xml",
-        "lib/netstandard1.5/Grpc.HealthCheck.dll",
-        "lib/netstandard1.5/Grpc.HealthCheck.pdb",
-        "lib/netstandard1.5/Grpc.HealthCheck.xml",
-        "lib/netstandard2.0/Grpc.HealthCheck.dll",
-        "lib/netstandard2.0/Grpc.HealthCheck.pdb",
-        "lib/netstandard2.0/Grpc.HealthCheck.xml",
         "packageIcon.png"
       ]
     },
@@ -1256,34 +930,6 @@
         "lib/netstandard2.1/Grpc.Net.Client.dll",
         "lib/netstandard2.1/Grpc.Net.Client.pdb",
         "lib/netstandard2.1/Grpc.Net.Client.xml",
-        "packageIcon.png"
-      ]
-    },
-    "Grpc.Net.ClientFactory/2.57.0": {
-      "sha512": "t3+mz7z6e3tezZbekioGOqix4QcOAWRACQqP3v/FA6HxkgraTRceaREPaFTxSFvGrpPtOSkJ3y1WRx0MA+8v9g==",
-      "type": "package",
-      "path": "grpc.net.clientfactory/2.57.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "grpc.net.clientfactory.2.57.0.nupkg.sha512",
-        "grpc.net.clientfactory.nuspec",
-        "lib/net6.0/Grpc.Net.ClientFactory.dll",
-        "lib/net6.0/Grpc.Net.ClientFactory.pdb",
-        "lib/net6.0/Grpc.Net.ClientFactory.xml",
-        "lib/net7.0/Grpc.Net.ClientFactory.dll",
-        "lib/net7.0/Grpc.Net.ClientFactory.pdb",
-        "lib/net7.0/Grpc.Net.ClientFactory.xml",
-        "lib/net8.0/Grpc.Net.ClientFactory.dll",
-        "lib/net8.0/Grpc.Net.ClientFactory.pdb",
-        "lib/net8.0/Grpc.Net.ClientFactory.xml",
-        "lib/netstandard2.0/Grpc.Net.ClientFactory.dll",
-        "lib/netstandard2.0/Grpc.Net.ClientFactory.pdb",
-        "lib/netstandard2.0/Grpc.Net.ClientFactory.xml",
-        "lib/netstandard2.1/Grpc.Net.ClientFactory.dll",
-        "lib/netstandard2.1/Grpc.Net.ClientFactory.pdb",
-        "lib/netstandard2.1/Grpc.Net.ClientFactory.xml",
         "packageIcon.png"
       ]
     },
@@ -1681,34 +1327,6 @@
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Extensions.DependencyModel/7.0.0": {
-      "sha512": "oONNYd71J3LzkWc4fUHl3SvMfiQMYUCo/mDHDEu76hYYxdhdrPYv6fvGv9nnKVyhE9P0h20AU8RZB5OOWQcAXg==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencymodel/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Extensions.DependencyModel.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyModel.targets",
-        "lib/net462/Microsoft.Extensions.DependencyModel.dll",
-        "lib/net462/Microsoft.Extensions.DependencyModel.xml",
-        "lib/net6.0/Microsoft.Extensions.DependencyModel.dll",
-        "lib/net6.0/Microsoft.Extensions.DependencyModel.xml",
-        "lib/net7.0/Microsoft.Extensions.DependencyModel.dll",
-        "lib/net7.0/Microsoft.Extensions.DependencyModel.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
-        "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
-        "microsoft.extensions.dependencymodel.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -2341,28 +1959,6 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.AspNetCore/7.0.0": {
-      "sha512": "F6p6rzOmg/R0EPI/PjJXcAlhCzusW5+xFx8kbsy6mJ6/mHI6wWWPxZbsLPoAYTpMiopKFl7HZhAr//KABGHtBQ==",
-      "type": "package",
-      "path": "serilog.aspnetcore/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net462/Serilog.AspNetCore.dll",
-        "lib/net462/Serilog.AspNetCore.xml",
-        "lib/net6.0/Serilog.AspNetCore.dll",
-        "lib/net6.0/Serilog.AspNetCore.xml",
-        "lib/net7.0/Serilog.AspNetCore.dll",
-        "lib/net7.0/Serilog.AspNetCore.xml",
-        "lib/netstandard2.0/Serilog.AspNetCore.dll",
-        "lib/netstandard2.0/Serilog.AspNetCore.xml",
-        "lib/netstandard2.1/Serilog.AspNetCore.dll",
-        "lib/netstandard2.1/Serilog.AspNetCore.xml",
-        "serilog.aspnetcore.7.0.0.nupkg.sha512",
-        "serilog.aspnetcore.nuspec"
-      ]
-    },
     "Serilog.Extensions.Hosting/7.0.0": {
       "sha512": "AWsDTs6TeCtyXYDWakzLXCOZA3/IdIfBWBwkYAF0ZvVktVr3E15oYP9pfI7GzKaGVmHaJF9TgFQnFEfcnzEkcw==",
       "type": "package",
@@ -2408,43 +2004,6 @@
         "serilog.extensions.logging.nuspec"
       ]
     },
-    "Serilog.Formatting.Compact/1.1.0": {
-      "sha512": "pNroKVjo+rDqlxNG5PXkRLpfSCuDOBY0ri6jp9PLe505ljqwhwZz8ospy2vWhQlFu5GkIesh3FcDs4n7sWZODA==",
-      "type": "package",
-      "path": "serilog.formatting.compact/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/Serilog.Formatting.Compact.dll",
-        "lib/net452/Serilog.Formatting.Compact.xml",
-        "lib/netstandard1.1/Serilog.Formatting.Compact.dll",
-        "lib/netstandard1.1/Serilog.Formatting.Compact.xml",
-        "lib/netstandard2.0/Serilog.Formatting.Compact.dll",
-        "lib/netstandard2.0/Serilog.Formatting.Compact.xml",
-        "serilog.formatting.compact.1.1.0.nupkg.sha512",
-        "serilog.formatting.compact.nuspec"
-      ]
-    },
-    "Serilog.Settings.Configuration/7.0.0": {
-      "sha512": "MlabSn74uXAGKNv9WWDdGejmsr7cKhsfi98ZtdeK119s4lTLp+hakBtnPm8OvXNUvtXYs2ijXKA0tIy4IMnjWQ==",
-      "type": "package",
-      "path": "serilog.settings.configuration/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net462/Serilog.Settings.Configuration.dll",
-        "lib/net462/Serilog.Settings.Configuration.xml",
-        "lib/net6.0/Serilog.Settings.Configuration.dll",
-        "lib/net6.0/Serilog.Settings.Configuration.xml",
-        "lib/net7.0/Serilog.Settings.Configuration.dll",
-        "lib/net7.0/Serilog.Settings.Configuration.xml",
-        "lib/netstandard2.0/Serilog.Settings.Configuration.dll",
-        "lib/netstandard2.0/Serilog.Settings.Configuration.xml",
-        "serilog.settings.configuration.7.0.0.nupkg.sha512",
-        "serilog.settings.configuration.nuspec"
-      ]
-    },
     "Serilog.Sinks.Console/4.1.0": {
       "sha512": "K6N5q+5fetjnJPvCmkWOpJ/V8IEIoMIB1s86OzBrbxwTyHxdx3pmz4H+8+O/Dc/ftUX12DM1aynx/dDowkwzqg==",
       "type": "package",
@@ -2463,28 +2022,6 @@
         "lib/netstandard2.0/Serilog.Sinks.Console.xml",
         "serilog.sinks.console.4.1.0.nupkg.sha512",
         "serilog.sinks.console.nuspec"
-      ]
-    },
-    "Serilog.Sinks.Debug/2.0.0": {
-      "sha512": "Y6g3OBJ4JzTyyw16fDqtFcQ41qQAydnEvEqmXjhwhgjsnG/FaJ8GUqF5ldsC/bVkK8KYmqrPhDO+tm4dF6xx4A==",
-      "type": "package",
-      "path": "serilog.sinks.debug/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net45/Serilog.Sinks.Debug.dll",
-        "lib/net45/Serilog.Sinks.Debug.xml",
-        "lib/net46/Serilog.Sinks.Debug.dll",
-        "lib/net46/Serilog.Sinks.Debug.xml",
-        "lib/netstandard1.0/Serilog.Sinks.Debug.dll",
-        "lib/netstandard1.0/Serilog.Sinks.Debug.xml",
-        "lib/netstandard2.0/Serilog.Sinks.Debug.dll",
-        "lib/netstandard2.0/Serilog.Sinks.Debug.xml",
-        "lib/netstandard2.1/Serilog.Sinks.Debug.dll",
-        "lib/netstandard2.1/Serilog.Sinks.Debug.xml",
-        "serilog.sinks.debug.2.0.0.nupkg.sha512",
-        "serilog.sinks.debug.nuspec"
       ]
     },
     "Serilog.Sinks.File/5.0.0": {
@@ -2690,31 +2227,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Threading.Channels/4.6.0": {
-      "sha512": "xdCw/eEo1XwxQNuhTLD10gaXnVt5rkKZCPjttXE5vtqwEkheqdGrNBcbU0UP9zWdgIwZWD+4NEl4OS10jKrZtg==",
-      "type": "package",
-      "path": "system.threading.channels/4.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp3.0/System.Threading.Channels.dll",
-        "lib/netcoreapp3.0/System.Threading.Channels.xml",
-        "lib/netstandard1.3/System.Threading.Channels.dll",
-        "lib/netstandard1.3/System.Threading.Channels.xml",
-        "lib/netstandard2.0/System.Threading.Channels.dll",
-        "lib/netstandard2.0/System.Threading.Channels.xml",
-        "system.threading.channels.4.6.0.nupkg.sha512",
-        "system.threading.channels.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "ProductService.Server/1.0.0": {
+    "ProductService.Contracts/1.0.0": {
       "type": "project",
-      "path": "../ProductService.Server/ProductService.Server.csproj",
-      "msbuildProject": "../ProductService.Server/ProductService.Server.csproj"
+      "path": "../ProductService.Contracts/ProductService.Contracts.csproj",
+      "msbuildProject": "../ProductService.Contracts/ProductService.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2724,7 +2240,7 @@
       "Grpc.Tools >= 2.57.0",
       "Microsoft.Extensions.Hosting >= 8.0.0",
       "Microsoft.Extensions.Http >= 8.0.0",
-      "ProductService.Server >= 1.0.0",
+      "ProductService.Contracts >= 1.0.0",
       "Serilog.Extensions.Hosting >= 7.0.0",
       "Serilog.Sinks.Console >= 4.1.0",
       "Serilog.Sinks.File >= 5.0.0"
@@ -2763,8 +2279,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\fazamuttaqien\\Documents\\.NET\\gRPC\\ProductService\\ProductService.Server\\ProductService.Server.csproj": {
-              "projectPath": "C:\\Users\\fazamuttaqien\\Documents\\.NET\\gRPC\\ProductService\\ProductService.Server\\ProductService.Server.csproj"
+            "C:\\Users\\fazamuttaqien\\Documents\\.NET\\gRPC\\ProductService\\ProductService.Contracts\\ProductService.Contracts.csproj": {
+              "projectPath": "C:\\Users\\fazamuttaqien\\Documents\\.NET\\gRPC\\ProductService\\ProductService.Contracts\\ProductService.Contracts.csproj"
             }
           }
         }

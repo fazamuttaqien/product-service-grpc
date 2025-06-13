@@ -13,7 +13,7 @@
           "Grpc.Tools": "2.57.0",
           "Microsoft.Extensions.Hosting": "8.0.0",
           "Microsoft.Extensions.Http": "8.0.0",
-          "ProductService.Server": "1.0.0",
+          "ProductService.Contracts": "1.0.0",
           "Serilog.Extensions.Hosting": "7.0.0",
           "Serilog.Sinks.Console": "4.1.0",
           "Serilog.Sinks.File": "5.0.0"
@@ -30,64 +30,9 @@
           }
         }
       },
-      "Grpc.AspNetCore/2.57.0": {
-        "dependencies": {
-          "Google.Protobuf": "3.25.0",
-          "Grpc.AspNetCore.Server.ClientFactory": "2.57.0",
-          "Grpc.Tools": "2.57.0"
-        }
-      },
-      "Grpc.AspNetCore.HealthChecks/2.57.0": {
-        "dependencies": {
-          "Grpc.AspNetCore.Server": "2.57.0",
-          "Grpc.HealthCheck": "2.57.0"
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.AspNetCore.HealthChecks.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.57.0.0"
-          }
-        }
-      },
-      "Grpc.AspNetCore.Server/2.57.0": {
-        "dependencies": {
-          "Grpc.Net.Common": "2.57.0"
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.AspNetCore.Server.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.57.0.0"
-          }
-        }
-      },
-      "Grpc.AspNetCore.Server.ClientFactory/2.57.0": {
-        "dependencies": {
-          "Grpc.AspNetCore.Server": "2.57.0",
-          "Grpc.Net.ClientFactory": "2.57.0"
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.57.0.0"
-          }
-        }
-      },
       "Grpc.Core.Api/2.57.0": {
         "runtime": {
           "lib/netstandard2.1/Grpc.Core.Api.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.57.0.0"
-          }
-        }
-      },
-      "Grpc.HealthCheck/2.57.0": {
-        "dependencies": {
-          "Google.Protobuf": "3.25.0",
-          "Grpc.Core.Api": "2.57.0",
-          "System.Threading.Channels": "4.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Grpc.HealthCheck.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.57.0.0"
           }
@@ -100,18 +45,6 @@
         },
         "runtime": {
           "lib/net8.0/Grpc.Net.Client.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.57.0.0"
-          }
-        }
-      },
-      "Grpc.Net.ClientFactory/2.57.0": {
-        "dependencies": {
-          "Grpc.Net.Client": "2.57.0",
-          "Microsoft.Extensions.Http": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Grpc.Net.ClientFactory.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.57.0.0"
           }
@@ -133,28 +66,58 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.CommandLine/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.CommandLine.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.EnvironmentVariables/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.FileExtensions/8.0.0": {
@@ -164,6 +127,12 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Json/8.0.0": {
@@ -173,6 +142,12 @@
           "Microsoft.Extensions.Configuration.FileExtensions": "8.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
           "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Json.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.UserSecrets/8.0.0": {
@@ -181,23 +156,30 @@
           "Microsoft.Extensions.Configuration.Json": "8.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {},
-      "Microsoft.Extensions.DependencyModel/7.0.0": {
-        "dependencies": {
-          "System.Text.Encodings.Web": "8.0.0",
-          "System.Text.Json": "8.0.0"
         },
         "runtime": {
-          "lib/net7.0/Microsoft.Extensions.DependencyModel.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -206,6 +188,12 @@
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Diagnostics.Abstractions": "8.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Diagnostics.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0": {
@@ -213,11 +201,23 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0",
           "System.Diagnostics.DiagnosticSource": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.FileProviders.Physical/8.0.0": {
@@ -225,9 +225,22 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
           "Microsoft.Extensions.FileSystemGlobbing": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
-      "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {},
+      "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Microsoft.Extensions.Hosting/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
@@ -252,6 +265,12 @@
           "Microsoft.Extensions.Logging.EventLog": "8.0.0",
           "Microsoft.Extensions.Logging.EventSource": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Hosting.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Hosting.Abstractions/8.0.0": {
@@ -261,6 +280,12 @@
           "Microsoft.Extensions.Diagnostics.Abstractions": "8.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Http/8.0.0": {
@@ -271,6 +296,12 @@
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Http.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Logging/8.0.0": {
@@ -278,11 +309,23 @@
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Configuration/8.0.0": {
@@ -295,6 +338,12 @@
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Configuration.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Console/8.0.0": {
@@ -305,6 +354,12 @@
           "Microsoft.Extensions.Logging.Configuration": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0",
           "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Console.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Debug/8.0.0": {
@@ -312,6 +367,12 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Debug.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Logging.EventLog/8.0.0": {
@@ -321,6 +382,12 @@
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0",
           "System.Diagnostics.EventLog": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.EventLog.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Logging.EventSource/8.0.0": {
@@ -331,12 +398,24 @@
           "Microsoft.Extensions.Options": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
           "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.EventSource.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Options/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0": {
@@ -346,33 +425,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
-      "Microsoft.Extensions.Primitives/8.0.0": {},
+      "Microsoft.Extensions.Primitives/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Serilog/2.12.0": {
         "runtime": {
           "lib/net6.0/Serilog.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.12.0.0"
-          }
-        }
-      },
-      "Serilog.AspNetCore/7.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Logging": "8.0.0",
-          "Serilog": "2.12.0",
-          "Serilog.Extensions.Hosting": "7.0.0",
-          "Serilog.Formatting.Compact": "1.1.0",
-          "Serilog.Settings.Configuration": "7.0.0",
-          "Serilog.Sinks.Console": "4.1.0",
-          "Serilog.Sinks.Debug": "2.0.0",
-          "Serilog.Sinks.File": "5.0.0"
-        },
-        "runtime": {
-          "lib/net7.0/Serilog.AspNetCore.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.0.0"
           }
         }
       },
@@ -403,30 +476,6 @@
           }
         }
       },
-      "Serilog.Formatting.Compact/1.1.0": {
-        "dependencies": {
-          "Serilog": "2.12.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
-          }
-        }
-      },
-      "Serilog.Settings.Configuration/7.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Binder": "8.0.0",
-          "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "Serilog": "2.12.0"
-        },
-        "runtime": {
-          "lib/net7.0/Serilog.Settings.Configuration.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.0.0"
-          }
-        }
-      },
       "Serilog.Sinks.Console/4.1.0": {
         "dependencies": {
           "Serilog": "2.12.0"
@@ -435,17 +484,6 @@
           "lib/net5.0/Serilog.Sinks.Console.dll": {
             "assemblyVersion": "4.1.0.0",
             "fileVersion": "4.1.0.0"
-          }
-        }
-      },
-      "Serilog.Sinks.Debug/2.0.0": {
-        "dependencies": {
-          "Serilog": "2.12.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Serilog.Sinks.Debug.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
           }
         }
       },
@@ -461,24 +499,41 @@
         }
       },
       "System.Diagnostics.DiagnosticSource/8.0.0": {},
-      "System.Diagnostics.EventLog/8.0.0": {},
+      "System.Diagnostics.EventLog/8.0.0": {
+        "runtime": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "System.Text.Encodings.Web/8.0.0": {},
       "System.Text.Json/8.0.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
         }
       },
-      "System.Threading.Channels/4.6.0": {},
-      "ProductService.Server/1.0.0": {
+      "ProductService.Contracts/1.0.0": {
         "dependencies": {
-          "Grpc.AspNetCore": "2.57.0",
-          "Grpc.AspNetCore.HealthChecks": "2.57.0",
-          "Serilog.AspNetCore": "7.0.0",
-          "Serilog.Sinks.Console": "4.1.0",
-          "Serilog.Sinks.File": "5.0.0"
+          "Google.Protobuf": "3.25.0",
+          "Grpc.Net.Client": "2.57.0"
         },
         "runtime": {
-          "ProductService.Server.dll": {
+          "ProductService.Contracts.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -499,34 +554,6 @@
       "path": "google.protobuf/3.25.0",
       "hashPath": "google.protobuf.3.25.0.nupkg.sha512"
     },
-    "Grpc.AspNetCore/2.57.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-mTKo9d5DYOxTFhg/8sdX5O3+gw1uFESmu7WhH04t5PSPltpQ10ZiK+Mr/ju/TW3MwxJg8uHt71fWL6AS443izw==",
-      "path": "grpc.aspnetcore/2.57.0",
-      "hashPath": "grpc.aspnetcore.2.57.0.nupkg.sha512"
-    },
-    "Grpc.AspNetCore.HealthChecks/2.57.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-MTxK4LJlEcqKUPQ7VfMWwmonzxvX58khjlUs4caEllJxo7DYqV95i7EuMTWTUdVzSZ1pCtfo9lw9Un2Nm+GqQg==",
-      "path": "grpc.aspnetcore.healthchecks/2.57.0",
-      "hashPath": "grpc.aspnetcore.healthchecks.2.57.0.nupkg.sha512"
-    },
-    "Grpc.AspNetCore.Server/2.57.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-g4JKqJ3RB7WKOrBxMSCkRc/1Xa5GqYlVb7k8OjUsERKW7LdSQ0ajcFMZ4Q79BZgA/xbJlGttmq4ewyzpBqGetA==",
-      "path": "grpc.aspnetcore.server/2.57.0",
-      "hashPath": "grpc.aspnetcore.server.2.57.0.nupkg.sha512"
-    },
-    "Grpc.AspNetCore.Server.ClientFactory/2.57.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Ucl50YKMMRaP/ikx20v6tDGdNaRzeiujmw8kmAFy3/4f8+d1mDY8wn3vcXpIflX4IE+WvZQOTHz5r/3/GutbQw==",
-      "path": "grpc.aspnetcore.server.clientfactory/2.57.0",
-      "hashPath": "grpc.aspnetcore.server.clientfactory.2.57.0.nupkg.sha512"
-    },
     "Grpc.Core.Api/2.57.0": {
       "type": "package",
       "serviceable": true,
@@ -534,26 +561,12 @@
       "path": "grpc.core.api/2.57.0",
       "hashPath": "grpc.core.api.2.57.0.nupkg.sha512"
     },
-    "Grpc.HealthCheck/2.57.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JLqHgQD0m98m2WZmXzudZWaCKUPO8WAJuHv51jIdMB/Pl2wTpqr4kD4P0PxI7Pk0iEBkEwt9+SMW7Z7s1Y8XuQ==",
-      "path": "grpc.healthcheck/2.57.0",
-      "hashPath": "grpc.healthcheck.2.57.0.nupkg.sha512"
-    },
     "Grpc.Net.Client/2.57.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-vVDW0ePnaH9Na+wjm64vpzdj05JEjOCmAXUlANVc+s3hBBreEizfbmlzWPjsL6ZskaSrA59Ckb0J2l1HMvtMHQ==",
       "path": "grpc.net.client/2.57.0",
       "hashPath": "grpc.net.client.2.57.0.nupkg.sha512"
-    },
-    "Grpc.Net.ClientFactory/2.57.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-t3+mz7z6e3tezZbekioGOqix4QcOAWRACQqP3v/FA6HxkgraTRceaREPaFTxSFvGrpPtOSkJ3y1WRx0MA+8v9g==",
-      "path": "grpc.net.clientfactory/2.57.0",
-      "hashPath": "grpc.net.clientfactory.2.57.0.nupkg.sha512"
     },
     "Grpc.Net.Common/2.57.0": {
       "type": "package",
@@ -638,13 +651,6 @@
       "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.DependencyModel/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-oONNYd71J3LzkWc4fUHl3SvMfiQMYUCo/mDHDEu76hYYxdhdrPYv6fvGv9nnKVyhE9P0h20AU8RZB5OOWQcAXg==",
-      "path": "microsoft.extensions.dependencymodel/7.0.0",
-      "hashPath": "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Diagnostics/8.0.0": {
       "type": "package",
@@ -779,13 +785,6 @@
       "path": "serilog/2.12.0",
       "hashPath": "serilog.2.12.0.nupkg.sha512"
     },
-    "Serilog.AspNetCore/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-F6p6rzOmg/R0EPI/PjJXcAlhCzusW5+xFx8kbsy6mJ6/mHI6wWWPxZbsLPoAYTpMiopKFl7HZhAr//KABGHtBQ==",
-      "path": "serilog.aspnetcore/7.0.0",
-      "hashPath": "serilog.aspnetcore.7.0.0.nupkg.sha512"
-    },
     "Serilog.Extensions.Hosting/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -800,33 +799,12 @@
       "path": "serilog.extensions.logging/7.0.0",
       "hashPath": "serilog.extensions.logging.7.0.0.nupkg.sha512"
     },
-    "Serilog.Formatting.Compact/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pNroKVjo+rDqlxNG5PXkRLpfSCuDOBY0ri6jp9PLe505ljqwhwZz8ospy2vWhQlFu5GkIesh3FcDs4n7sWZODA==",
-      "path": "serilog.formatting.compact/1.1.0",
-      "hashPath": "serilog.formatting.compact.1.1.0.nupkg.sha512"
-    },
-    "Serilog.Settings.Configuration/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-MlabSn74uXAGKNv9WWDdGejmsr7cKhsfi98ZtdeK119s4lTLp+hakBtnPm8OvXNUvtXYs2ijXKA0tIy4IMnjWQ==",
-      "path": "serilog.settings.configuration/7.0.0",
-      "hashPath": "serilog.settings.configuration.7.0.0.nupkg.sha512"
-    },
     "Serilog.Sinks.Console/4.1.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-K6N5q+5fetjnJPvCmkWOpJ/V8IEIoMIB1s86OzBrbxwTyHxdx3pmz4H+8+O/Dc/ftUX12DM1aynx/dDowkwzqg==",
       "path": "serilog.sinks.console/4.1.0",
       "hashPath": "serilog.sinks.console.4.1.0.nupkg.sha512"
-    },
-    "Serilog.Sinks.Debug/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Y6g3OBJ4JzTyyw16fDqtFcQ41qQAydnEvEqmXjhwhgjsnG/FaJ8GUqF5ldsC/bVkK8KYmqrPhDO+tm4dF6xx4A==",
-      "path": "serilog.sinks.debug/2.0.0",
-      "hashPath": "serilog.sinks.debug.2.0.0.nupkg.sha512"
     },
     "Serilog.Sinks.File/5.0.0": {
       "type": "package",
@@ -863,14 +841,7 @@
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
     },
-    "System.Threading.Channels/4.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xdCw/eEo1XwxQNuhTLD10gaXnVt5rkKZCPjttXE5vtqwEkheqdGrNBcbU0UP9zWdgIwZWD+4NEl4OS10jKrZtg==",
-      "path": "system.threading.channels/4.6.0",
-      "hashPath": "system.threading.channels.4.6.0.nupkg.sha512"
-    },
-    "ProductService.Server/1.0.0": {
+    "ProductService.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
