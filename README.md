@@ -56,6 +56,11 @@ dotnet new sln -n ProductService
 # Add projects
 dotnet sln add ProductService.Server/ProductService.Server.csproj
 dotnet sln add ProductService.Client/ProductService.Client.csproj
+dotnet sln add ProductService.Contracts/ProductService.Contracts.csproj
+
+# Add reference
+dotnet add ProductService.Server reference ProductService.Contracts
+dotnet add ProductService.Client reference ProductService.Contracts
 
 # Restore packages
 dotnet restore
