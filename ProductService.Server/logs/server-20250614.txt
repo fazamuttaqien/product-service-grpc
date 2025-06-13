@@ -1,0 +1,15 @@
+2025-06-14 00:02:30.489 +07:00 [INF] Starting gRPC call: /productservice.ProductService/GetProducts
+2025-06-14 00:02:30.505 +07:00 [INF] Getting products - Page: 1, PageSize: 10
+2025-06-14 00:02:30.524 +07:00 [INF] Completed gRPC call: /productservice.ProductService/GetProducts in 34ms
+2025-06-14 00:02:30.644 +07:00 [INF] Starting gRPC call: /productservice.ProductService/GetProduct
+2025-06-14 00:02:30.648 +07:00 [INF] Getting product with ID: 1
+2025-06-14 00:02:30.653 +07:00 [INF] Completed gRPC call: /productservice.ProductService/GetProduct in 9ms
+2025-06-14 00:02:30.680 +07:00 [INF] Starting gRPC call: /productservice.ProductService/CreateProduct
+2025-06-14 00:02:30.686 +07:00 [INF] Creating product: New Gaming Mouse
+2025-06-14 00:02:30.691 +07:00 [INF] Completed gRPC call: /productservice.ProductService/CreateProduct in 10ms
+2025-06-14 00:02:30.721 +07:00 [INF] Starting gRPC call: /productservice.ProductService/UpdateProduct
+2025-06-14 00:02:30.725 +07:00 [INF] Updating product with ID: 1
+2025-06-14 00:02:30.728 +07:00 [INF] Completed gRPC call: /productservice.ProductService/UpdateProduct in 6ms
+2025-06-14 00:02:30.754 +07:00 [INF] Starting gRPC streaming call: /productservice.ProductService/GetProductStream
+2025-06-14 00:02:30.759 +07:00 [INF] Streaming products
+2025-06-14 00:02:31.301 +07:00 [INF] Completed gRPC streaming call: /productservice.ProductService/GetProductStream

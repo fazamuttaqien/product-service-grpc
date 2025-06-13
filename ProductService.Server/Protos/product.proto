@@ -1,0 +1,89 @@
+syntax = "proto3";
+
+option csharp_namespace = "ProductService.Grpc.Contracts";
+
+package productservice;
+
+// Product Service Definition
+service ProductService {
+    rpc GetProduct (GetProductRequest) returns (GetProductResponse);
+    rpc GetProducts (GetProductsRequest) returns (GetProductsResponse);
+    rpc CreateProduct (CreateProductRequest) returns (CreateProductResponse);
+    rpc UpdateProduct (UpdateProductRequest) returns (UpdateProductResponse);
+    rpc DeleteProduct (DeleteProductRequest) returns (DeleteProductResponse);
+    rpc GetProductStream (GetProductsRequest) returns (stream ProductDto);
+}
+
+// Request/Response Messages
+message GetProductRequest {
+    int32 id = 1;
+}
+
+message GetProductResponse {
+    ProductDto product = 1;
+    bool success = 2;
+    string message = 3;
+}
+
+message GetProductsRequest {
+    int32 page = 1;
+    int32 page_size = 2;
+    string category = 3;
+}
+
+message GetProductsResponse {
+    repeated ProductDto products = 1;
+    int32 total_count = 2;
+    bool success = 3;
+    string message = 4;
+}
+
+message CreateProductRequest {
+    string name = 1;
+    string description = 2;
+    double price = 3;
+    string category = 4;
+    int32 stock = 5;
+}
+
+message CreateProductResponse {
+    ProductDto product = 1;
+    bool success = 2;
+    string message = 3;
+}
+
+message UpdateProductRequest {
+    int32 id = 1;
+    string name = 2;
+    string description = 3;
+    double price = 4;
+    string category = 5;
+    int32 stock = 6;
+}
+
+message UpdateProductResponse {
+    ProductDto product = 1;
+    bool success = 2;
+    string message = 3;
+}
+
+message DeleteProductRequest {
+    int32 id = 1;
+}
+
+message DeleteProductResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+// Data Transfer Objects
+message ProductDto {
+    int32 id = 1;
+    string name = 2;
+    string description = 3;
+    double price = 4;
+    string category = 5;
+    int32 stock = 6;
+    string created_at = 7;
+    string updated_at = 8;
+}
